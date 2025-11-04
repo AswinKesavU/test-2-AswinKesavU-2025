@@ -1,8 +1,8 @@
-main.o: main.c student.h menu.h grade.h utils.h student.c menu.c utils.c grade.c
-	gcc -c main.c student.h menu.h grade.h utils.h student.c menu.c utils.c grade.c
+main.o: main.c menu.h student.h 
+	gcc -c main.c student.h menu.h 
 
-menu.o: menu.c menu.h grade.h utils.h utils.c grade.c
-	gcc -c menu.c menu.h grade.h utils.h utils.c grade.c
+menu.o: menu.c menu.h grade.h utils.h
+	gcc -c menu.c menu.h grade.h utils.h
 
 student.o: student.c student.h
 	gcc -c student.c student.h
